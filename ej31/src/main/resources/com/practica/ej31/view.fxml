@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="22" alignment="CENTER" prefWidth="480" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practica.ej31.Controller">
+    <padding>
+        <Insets top="25" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="Contar número de clics"/>
+    <TextField fx:id="txtConteo" editable="false" text="0" alignment="CENTER_LEFT"/>
+    <Button text="¡Contar!" onAction="#contar"/>
+
+    <Label text="Esperar 10 segundos">
+        <VBox.margin>
+            <Insets top="15"/>
+        </VBox.margin>
+    </Label>
+    <ProgressBar fx:id="pbEspera" progress="0.0" maxWidth="Infinity"/>
+    <Button fx:id="btnEsperar" text="¡Esperar!" onAction="#esperar"/>
+</VBox>

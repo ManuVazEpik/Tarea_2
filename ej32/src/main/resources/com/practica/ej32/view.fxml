@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="18" alignment="CENTER" prefWidth="560" xmlns="http://javafx.com/javafx/21"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practica.ej32.Controller">
+    <padding>
+        <Insets top="25" right="30" bottom="30" left="30"/>
+    </padding>
+
+    <Label text="La Liebre y la Tortuga"/>
+    <Button fx:id="btnIniciar" text="¡Iniciar Carrera!" onAction="#iniciar"/>
+
+    <Label fx:id="lblLiebre" text="La Liebre: Lista para correr"/>
+    <ProgressBar fx:id="pbLiebre" progress="0.0" maxWidth="Infinity"/>
+
+    <Label fx:id="lblTortuga" text="La Tortuga: Lista para correr"/>
+    <ProgressBar fx:id="pbTortuga" progress="0.0" maxWidth="Infinity"/>
+
+    <Label fx:id="lblResultado" style="-fx-font-weight: bold;"/>
+</VBox>
